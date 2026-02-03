@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Профиль — GMotors</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/themes.css">
+</head>
+<body class="page--fade">
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="index.html"><img src="assets/logo.svg" alt="GMotors" class="logo"><span>GMotors</span></a>
+<nav class="nav"><a href="catalog.html">Каталог</a></nav>
+<div class="actions"><a class="btn" href="cart.html">Корзина</a></div>
+</div>
+</header>
+
+
+<main class="container">
+<section class="auth">
+<div class="auth-card">
+<h2>Войти</h2>
+<input id="loginEmail" placeholder="Email">
+<input id="loginPass" type="password" placeholder="Пароль">
+<button id="loginBtn" class="btn">Войти</button>
+<div class="divider">или</div>
+<button id="googleSim" class="btn outline">Войти через Google (симуляция)</button>
+</div>
+
+
+<div class="auth-card">
+<h2>Регистрация</h2>
+<input id="regEmail" placeholder="Email">
+<input id="regPass" type="password" placeholder="Пароль">
+<div id="passStrength">Сила пароля: —</div>
+<button id="regBtn" class="btn">Зарегистрироваться</button>
+</div>
+
+
+<div id="profileBox" class="auth-card hidden">
+<h2>Профиль</h2>
+<div id="profileInfo"></div>
+<button id="logoutBtn" class="btn outline">Выйти</button>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer"><div class="container">© GMotors</div></footer>
+
+
+<script src="js/auth.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

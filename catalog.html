@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Каталог — GMotors</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="page--fade">
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="index.html"><img src="assets/logo.svg" alt="GMotors" class="logo"><span>GMotors</span></a>
+<nav class="nav"><a href="catalog.html">Каталог</a><a href="about.html">О нас</a></nav>
+<div class="actions"><a class="btn" href="cart.html">Корзина (<span id="cartCountTop">0</span>)</a><a class="btn ghost" href="profile.html">Вход</a></div>
+</div>
+</header>
+
+
+<main class="container">
+<section class="catalog-controls">
+<input id="search" placeholder="Поиск по названию, бренду, вязкости...">
+<select id="filterType"><option value="">Все типы двигателя</option><option value="2T">2T</option><option value="4T">4T</option></select>
+<select id="filterPurpose"><option value="">Все назначения</option><option value="эндуро">Эндуро</option><option value="питбайк">Питбайк</option></select>
+<button id="clearFilters" class="btn outline">Сбросить</button>
+</section>
+
+
+<section>
+<div id="catalogGrid" class="product-grid"></div>
+</section>
+</main>
+
+
+<footer class="site-footer"><div class="container">© GMotors</div></footer>
+
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
